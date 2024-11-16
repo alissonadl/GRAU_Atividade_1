@@ -1,6 +1,14 @@
-from flask import Flask
+from flask import Flask, render_template
 app = Flask(__name__)
 
 @app.route('/')
-def index():
-    return 'Hello World'
+def pagina_inicial():
+    return render_template("pagina_inicial.html")
+
+@app.route('/contato')
+def contato():
+    return render_template("contato.html")
+
+@app.route('/msgenviada')
+def msgenviada():
+    return render_template("msgenviada.html")
