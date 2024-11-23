@@ -12,3 +12,7 @@ def contato():
 @app.route('/msgenviada')
 def msgenviada():
     return render_template("msgenviada.html")
+
+@app.route('/rota_filha')
+def rotafilha():
+    return render_template("rota_filha.html")

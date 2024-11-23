@@ -16,7 +16,7 @@
     <h2>Contatos:</h2>
     <p>Email: FulaninhodeTal@gmail.com</p>
     <p>Telefone: (84) 9 4002 8922</p>
-    <form action="msgenviada">
+    <form action="{{ url_for('msgenviada') }}">
         <label for="mensagem">Sua mensagem:</label><br>
         <textarea id="mensagem" name="mensagem" rows="5" cols="50" placeholder="Digite sua mensagem aqui..."></textarea><br>
         <button type="submit">Enviar</button>
