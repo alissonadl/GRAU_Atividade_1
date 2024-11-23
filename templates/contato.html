@@ -4,11 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
-    <link ref="Stylesheet" href="/static/styles.css">
+    <link rel="stylesheet" href="/static/styles.css">
 </head>
 <body>
-    <a>Contatos:</a>
-    <a>Email: FulaninhodeTal@gmail.com</a>
-    <a>Telefone: (84) 9 4002 8922</a>
+    <div>
+        <nav>
+            <a href="{{ url_for('pagina_inicial') }}">Início</a>
+            <a href="{{ url_for('contato') }}">Contato</a>
+        </nav>
+    </div>
+    <h2>Contatos:</h2>
+    <p>Email: FulaninhodeTal@gmail.com</p>
+    <p>Telefone: (84) 9 4002 8922</p>
+    <form action="msgenviada">
+        <label for="mensagem">Sua mensagem:</label><br>
+        <textarea id="mensagem" name="mensagem" rows="5" cols="50" placeholder="Digite sua mensagem aqui..."></textarea><br>
+        <button type="submit">Enviar</button>
+    </form>
 </body>
 </html>
